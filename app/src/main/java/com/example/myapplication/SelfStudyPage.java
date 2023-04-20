@@ -19,4 +19,9 @@ public class SelfStudyPage extends AppCompatActivity {
         Intent i = new Intent(this, ListViewPractice.class);
         startActivity(i);
     }
+
+    public void navigateRecyclerViewPractice(View view) {
+        Intent i = new Intent(this, RecycleView.class);
+        startActivity(i);
+    }
 }

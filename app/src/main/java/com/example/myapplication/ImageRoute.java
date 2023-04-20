@@ -10,6 +10,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class ImageRoute extends AppCompatActivity {
 
@@ -30,9 +31,15 @@ public class ImageRoute extends AppCompatActivity {
 
     private int getImg(int index) {
         switch (index) {
-            case 0: return R.drawable.peach;
-            case 1: return R.drawable.tomato;
-            case 2: return R.drawable.squash;
+            case 0:
+                Toast.makeText(this, "Peach", Toast.LENGTH_SHORT).show();
+                return R.drawable.peach ;
+            case 1:
+                Toast.makeText(this, "Tomato", Toast.LENGTH_SHORT).show();
+                return R.drawable.tomato;
+            case 2:
+                Toast.makeText(this, "Squash", Toast.LENGTH_SHORT).show();
+                return R.drawable.squash;
             default: return -1;
         }
     }
