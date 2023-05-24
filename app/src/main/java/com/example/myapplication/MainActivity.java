@@ -58,5 +58,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void buttonLab(View view) {
+        Button button = (Button) view;
+        Intent i = new Intent(this, CheckBoxLab.class);
+        startActivity(i);
+    }
+
+    public void handleNavToDatePicker(View view) {
+        Button button = (Button) view;
+        Intent i = new Intent(this, DatePicker.class);
+        startActivity(i);
+    }
 
 }

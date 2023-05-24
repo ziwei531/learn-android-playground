@@ -42,7 +42,6 @@ public class Sum extends AppCompatActivity {
             //this is to hide the keyboard after submit
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-
         }
 
     }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxLab">
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Select a Value"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="submit"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_melaka" />
+
+    <CheckBox
+        android:id="@+id/checkBox_selangor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Selangor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_sabah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabah"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_selangor"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_selangor" />
+
+    <CheckBox
+        android:id="@+id/checkBox_melaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Melaka"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_sabah"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_sabah" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
